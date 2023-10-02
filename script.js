@@ -3,6 +3,7 @@ let b = "";
 let valor = "";
 let executar = "";
 let temPonto = false;
+let desligada = true;
 
 soma = (a,b) => Number(a) + Number(b);
 sub = (a,b) => a - b;
@@ -49,6 +50,22 @@ function desliga()
         zerar = "";
     }
     desligada = !desligada;
+}
+desliga ();
+function calcula_raiz(){
+    if (valor == ""){
+        valor = 0;
+    }
+    valor = raiz (valor);
+    mostrar_resultado ();
+}
+
+function  porcentagem (){
+    if (executar == "mult"){
+        b = valor; 
+        valor = div (mult(a,b),100);
+        mostrar_resultado ();
+    }
 }
 function zerar (){
     a = "";
