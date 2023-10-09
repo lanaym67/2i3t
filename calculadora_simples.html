@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Simples</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="script/script.js"></script>
+   <script src="script/script.js"></script>
 </head>
 <body>
     <section class="calc_simples">
@@ -16,8 +16,8 @@
         <div class="btn">
             <button onclick="desliga()">ON</button>
             <button onclick="zerar()">C</button>
-            <button onclick="operacao('porc')">%</button>
-            <button onclick="operacao('raiz')">&radic;</button>
+            <button onclick="porcentagem()">%</button>
+            <button onclick="raiz_quadrada()">&radic;</button>
             
             <button onclick="digitando('7')">7</button>
             <button onclick="digitando('8')">8</button>
@@ -37,5 +37,8 @@
             <button id="igual" onclick="calcular()">=</button>
         </div>
     </section>
+      <script>
+        desligar();
+      </script>
 </body>
 </html>

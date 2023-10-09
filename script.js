@@ -22,7 +22,11 @@ equacao2Grau = (a,b,c) =>{
 function mostrar_resultado(){
     document.getElementById("resultado").value = valor;
 }
+function raiz_quadrada(){
+    valor = raiz(valor);
+    mostrar_resultado();
 
+}
 function calcular(){
     if(executar != ""){
         b = valor;
@@ -43,21 +47,14 @@ function calcular(){
 function desliga()
 {
     if (desligada) {
+        desligada = false;
         zerar();
-       
     } else {
         mostrar_resultado();
         zerar = "";
+        desligada = true;
     }
-    desligada = !desligada;
-}
-desliga ();
-function calcula_raiz(){
-    if (valor == ""){
-        valor = 0;
-    }
-    valor = raiz (valor);
-    mostrar_resultado ();
+  
 }
 
 function  porcentagem (){
