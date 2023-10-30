@@ -1,8 +1,9 @@
 body{
     background-color: rgb(202, 133, 187);
 }
-.variavel{
-    width: 32px;
-    background-color: aliceblue;
-    text-align: right;
+.entrada{
+    width: 40px;
+    border: none;
+    background-color: rgb(202, 133, 187);
+    border-bottom: 2px solid #000;
 }
