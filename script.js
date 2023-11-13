@@ -151,3 +151,31 @@ const set_valor_c = () => {
     calcular_equacao();
 }
 
+let pa_a1 = "";
+let pa_r = "";
+let pa_n = "";
+const setpa_a1 = ()=>{
+    pa_a1 = Number(document.getElementById("pa_a1").value);
+    mostrarpa_seq();
+}
+
+const setpa_r = ()=>{
+    pa_r = Number(document.getElementById("pa_r").value);
+    mostrarpa_seq();
+}
+
+const setpa_n = ()=>{
+    pa_n = Number(document.getElementById("pa_n").value);
+    mostrarpa_seq();
+}
+
+const mostrarpa_seq= ()=>{
+    let pa = "";
+    if(pa_a1 !="") pa += pa_a1
+    if(pa_r !="" && pa_n !="" && n > 0){
+        for(let i = 1; i > pa_n; i++){
+            pa += ", " + (i* pa_r) + pa_a1;
+        }
+    }
+    document.getElementById("seq_pa").innerHTML = pa; 
+}

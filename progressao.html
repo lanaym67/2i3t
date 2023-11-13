@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/script.js"></script>
     <title>Progressoes</title>
 </head>
 <body>
@@ -12,7 +13,13 @@
         Calculo da razão: r = a <sub>2</sub> - a <sub>2</sub> <br>
         Calculo do ultimo termo (n); a <sub>n</sub> = a <sub>1</sub> . (n - 1) . r<br>
         Soma de n termos: S <sub>1</sub> (a <sub>1</sub> + a <sub>n</sub>) * (n/2)<br>
-
-    </section>
+    
+        <div class="calculoPA">
+            a <sub>1</sub>; <input onchange="setpa_a1()" type= "number" id="pa_a1"><br>
+            r =  <input onchange="setpa_r()"type="number" id="pa_r"><br>
+            n =  <input onchange="setpa_n()"type="number" id="pa_n"><br>
+            Sequencia: <span id="pa_seq"></span>
+        </div>
+        </section>
 </body>
 </html>
