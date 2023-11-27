@@ -184,3 +184,14 @@ const mostrarpa_seq= ()=>{
     }
     document.getElementById("seq_pa").innerHTML = pa; 
 }
+let num = 0;
+const troca_imagem = () => {
+    num++;
+    setTimeout (()=>{
+        document.getElementById("figura").src = "./imagem/img"+num+".png";
+        if(num == 3)num = 0;
+        troca_imagem();
+    },1000);
+
+}
+troca_imagem();
